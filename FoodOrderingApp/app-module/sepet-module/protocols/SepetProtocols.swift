@@ -9,8 +9,8 @@ import Foundation
 
 
 protocol ViewToPresenterSepetProtocol {
-    var anasayfaInteractor:PresenterToInteractorSepetProtocol? {get set}
-    var anasayfaView:PresenterToViewSepetProtocol? {get set}
+    var sepetInteractor:PresenterToInteractorSepetProtocol? {get set}
+    var sepetView:PresenterToViewSepetProtocol? {get set}
     
     func sepettekileriYukle()
     func sil(sepet_yemek_id:String)

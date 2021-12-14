@@ -8,7 +8,8 @@
 import Foundation
 
 class SepetPresenter : ViewToPresenterSepetProtocol {
-    var sepetInteractor: PresenterToInteractorSepetProtocol?
+
+    var sepetInteractor: PresenterToInteractorSepetProtocol?    
     var sepetView: PresenterToViewSepetProtocol?
     
     func sepettekileriYukle() {
@@ -20,7 +21,9 @@ class SepetPresenter : ViewToPresenterSepetProtocol {
     }
 }
 
-extension AnasayfaPresenter : InteractorToPresenterAnasayfaProtocol {
+extension SepetPresenter : InteractorToPresenterSepetProtocol {
+
+    
     func presenteraVeriGonder(sepetListesi: Array<SepetEleman>) {
         sepetView?.vieweVeriGonder(sepetListesi: sepetListesi)
     }
