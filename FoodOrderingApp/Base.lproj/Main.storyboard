@@ -203,7 +203,7 @@
                                 <rect key="frame" x="0.0" y="110" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="LtH-eV-06y">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartcell" rowHeight="100" id="LtH-eV-06y" customClass="CartTableViewCell" customModule="FoodOrderingApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LtH-eV-06y" id="y9J-v4-aC4">
@@ -247,6 +247,11 @@
                                                 <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
                                             </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cartImageView" destination="r2T-lI-eKx" id="cRj-rG-o74"/>
+                                            <outlet property="foodNameLabel" destination="Ksj-xX-8Wk" id="GgR-qD-vj0"/>
+                                            <outlet property="foodPriceLabel" destination="R1c-66-TJh" id="YEK-Xs-IHq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -261,6 +266,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sepetim" id="tON-MB-9qD"/>
+                    <connections>
+                        <outlet property="cartTableView" destination="Ltf-Sk-wux" id="tY5-HR-Dia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Oa-2L-Rhr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

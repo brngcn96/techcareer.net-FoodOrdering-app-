@@ -15,6 +15,12 @@
 		AF03901727610720006B0D0C /* YemeklerCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03901627610720006B0D0C /* YemeklerCevap.swift */; };
 		AF039020276131A5006B0D0C /* FoodsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03901F276131A5006B0D0C /* FoodsTableViewCell.swift */; };
 		AF047CDF276925F200B54A24 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CDE276925F200B54A24 /* CartTableViewCell.swift */; };
+		AF047CE62769325900B54A24 /* SepetProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CE52769325900B54A24 /* SepetProtocols.swift */; };
+		AF047CE82769326B00B54A24 /* SepetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CE72769326B00B54A24 /* SepetInteractor.swift */; };
+		AF047CEA2769327D00B54A24 /* SepetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CE92769327D00B54A24 /* SepetPresenter.swift */; };
+		AF047CEC2769328900B54A24 /* SepetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CEB2769328900B54A24 /* SepetRouter.swift */; };
+		AF047CEE2769363B00B54A24 /* SepetEleman.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CED2769363B00B54A24 /* SepetEleman.swift */; };
+		AF047CF02769364900B54A24 /* SepetCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CEF2769364900B54A24 /* SepetCevap.swift */; };
 		AF32539127679EE80004DD67 /* YemekDetayProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF32539027679EE80004DD67 /* YemekDetayProtocols.swift */; };
 		AF3253962767A1980004DD67 /* YemekDetayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253952767A1980004DD67 /* YemekDetayPresenter.swift */; };
 		AF3253982767A20C0004DD67 /* YemekDetayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253972767A20C0004DD67 /* YemekDetayInteractor.swift */; };
@@ -66,6 +72,12 @@
 		AF03901627610720006B0D0C /* YemeklerCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemeklerCevap.swift; sourceTree = "<group>"; };
 		AF03901F276131A5006B0D0C /* FoodsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsTableViewCell.swift; sourceTree = "<group>"; };
 		AF047CDE276925F200B54A24 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		AF047CE52769325900B54A24 /* SepetProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetProtocols.swift; sourceTree = "<group>"; };
+		AF047CE72769326B00B54A24 /* SepetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetInteractor.swift; sourceTree = "<group>"; };
+		AF047CE92769327D00B54A24 /* SepetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetPresenter.swift; sourceTree = "<group>"; };
+		AF047CEB2769328900B54A24 /* SepetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetRouter.swift; sourceTree = "<group>"; };
+		AF047CED2769363B00B54A24 /* SepetEleman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetEleman.swift; sourceTree = "<group>"; };
+		AF047CEF2769364900B54A24 /* SepetCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetCevap.swift; sourceTree = "<group>"; };
 		AF32539027679EE80004DD67 /* YemekDetayProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayProtocols.swift; sourceTree = "<group>"; };
 		AF3253952767A1980004DD67 /* YemekDetayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayPresenter.swift; sourceTree = "<group>"; };
 		AF3253972767A20C0004DD67 /* YemekDetayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayInteractor.swift; sourceTree = "<group>"; };
@@ -143,6 +155,45 @@
 				AFBF32A2275F514A00EFA740 /* sepet-module */,
 			);
 			path = "app-module";
+			sourceTree = "<group>";
+		};
+		AF047CE02769320A00B54A24 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				AF047CEB2769328900B54A24 /* SepetRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		AF047CE12769321700B54A24 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AF047CE22769322000B54A24 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AF047CE92769327D00B54A24 /* SepetPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		AF047CE32769322900B54A24 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AF047CE72769326B00B54A24 /* SepetInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		AF047CE42769323100B54A24 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AF047CE52769325900B54A24 /* SepetProtocols.swift */,
+			);
+			path = protocols;
 			sourceTree = "<group>";
 		};
 		AF32538B27679E930004DD67 /* presenter */ = {
@@ -310,6 +361,8 @@
 			children = (
 				AF03901427610700006B0D0C /* Yemek.swift */,
 				AF03901627610720006B0D0C /* YemeklerCevap.swift */,
+				AF047CED2769363B00B54A24 /* SepetEleman.swift */,
+				AF047CEF2769364900B54A24 /* SepetCevap.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -317,6 +370,11 @@
 		AFBF32A2275F514A00EFA740 /* sepet-module */ = {
 			isa = PBXGroup;
 			children = (
+				AF047CE42769323100B54A24 /* protocols */,
+				AF047CE32769322900B54A24 /* interactor */,
+				AF047CE22769322000B54A24 /* presenter */,
+				AF047CE12769321700B54A24 /* view */,
+				AF047CE02769320A00B54A24 /* router */,
 			);
 			path = "sepet-module";
 			sourceTree = "<group>";
@@ -576,23 +634,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF047CE82769326B00B54A24 /* SepetInteractor.swift in Sources */,
 				AFBF3274275F505100EFA740 /* ViewController.swift in Sources */,
 				AF03901527610700006B0D0C /* Yemek.swift in Sources */,
 				AF03506127669ACA00816631 /* SepetVC.swift in Sources */,
 				AF6C89F82765298F00695ECB /* AnasayfaInteractor.swift in Sources */,
 				AF32539A2767C8A80004DD67 /* YemekDetayRouter.swift in Sources */,
+				AF047CE62769325900B54A24 /* SepetProtocols.swift in Sources */,
+				AF047CEC2769328900B54A24 /* SepetRouter.swift in Sources */,
 				AFBF3270275F505100EFA740 /* AppDelegate.swift in Sources */,
+				AF047CEA2769327D00B54A24 /* SepetPresenter.swift in Sources */,
 				AF03505F276697A900816631 /* YemekDetayVC.swift in Sources */,
 				AF3253962767A1980004DD67 /* YemekDetayPresenter.swift in Sources */,
 				AF047CDF276925F200B54A24 /* CartTableViewCell.swift in Sources */,
 				AF32539127679EE80004DD67 /* YemekDetayProtocols.swift in Sources */,
 				AF3253982767A20C0004DD67 /* YemekDetayInteractor.swift in Sources */,
 				AF6C89FA27652CB600695ECB /* AnasayfaPresenter.swift in Sources */,
+				AF047CF02769364900B54A24 /* SepetCevap.swift in Sources */,
 				AF039020276131A5006B0D0C /* FoodsTableViewCell.swift in Sources */,
 				AF6C89FC27652D2A00695ECB /* AnasayfaRouter.swift in Sources */,
 				AF03901727610720006B0D0C /* YemeklerCevap.swift in Sources */,
 				AF6C89F6276527A400695ECB /* AnasayfaProtocols.swift in Sources */,
 				AFBF3272275F505100EFA740 /* SceneDelegate.swift in Sources */,
+				AF047CEE2769363B00B54A24 /* SepetEleman.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

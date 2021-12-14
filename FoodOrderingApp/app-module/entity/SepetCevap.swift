@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class SepetCevap : Codable{
+    
+    var sepet_yemekler:[Yemek]?
+    
+}
