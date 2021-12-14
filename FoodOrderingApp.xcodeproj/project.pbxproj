@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E6116F6BB161D63D6314614 /* Pods_FoodOrderingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E0C1597DB9F7874D5EC688 /* Pods_FoodOrderingAppTests.framework */; };
+		AF03505D2766960D00816631 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF03505C2766960D00816631 /* Kingfisher */; };
+		AF03505F276697A900816631 /* YemekDetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03505E276697A900816631 /* YemekDetayVC.swift */; };
+		AF03506127669ACA00816631 /* SepetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03506027669ACA00816631 /* SepetVC.swift */; };
+		AF03901527610700006B0D0C /* Yemek.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03901427610700006B0D0C /* Yemek.swift */; };
+		AF03901727610720006B0D0C /* YemeklerCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03901627610720006B0D0C /* YemeklerCevap.swift */; };
+		AF039020276131A5006B0D0C /* FoodsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03901F276131A5006B0D0C /* FoodsTableViewCell.swift */; };
+		AF047CDF276925F200B54A24 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CDE276925F200B54A24 /* CartTableViewCell.swift */; };
+		AF32539127679EE80004DD67 /* YemekDetayProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF32539027679EE80004DD67 /* YemekDetayProtocols.swift */; };
+		AF3253962767A1980004DD67 /* YemekDetayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253952767A1980004DD67 /* YemekDetayPresenter.swift */; };
+		AF3253982767A20C0004DD67 /* YemekDetayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253972767A20C0004DD67 /* YemekDetayInteractor.swift */; };
+		AF32539A2767C8A80004DD67 /* YemekDetayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253992767C8A80004DD67 /* YemekDetayRouter.swift */; };
+		AF6C89F6276527A400695ECB /* AnasayfaProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89F5276527A400695ECB /* AnasayfaProtocols.swift */; };
+		AF6C89F82765298F00695ECB /* AnasayfaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89F72765298F00695ECB /* AnasayfaInteractor.swift */; };
+		AF6C89FA27652CB600695ECB /* AnasayfaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89F927652CB600695ECB /* AnasayfaPresenter.swift */; };
+		AF6C89FC27652D2A00695ECB /* AnasayfaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89FB27652D2A00695ECB /* AnasayfaRouter.swift */; };
 		AFBF3270275F505100EFA740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF326F275F505100EFA740 /* AppDelegate.swift */; };
 		AFBF3272275F505100EFA740 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF3271275F505100EFA740 /* SceneDelegate.swift */; };
 		AFBF3274275F505100EFA740 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF3273275F505100EFA740 /* ViewController.swift */; };
@@ -16,6 +32,8 @@
 		AFBF3287275F505200EFA740 /* FoodOrderingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF3286275F505200EFA740 /* FoodOrderingAppTests.swift */; };
 		AFBF3291275F505200EFA740 /* FoodOrderingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF3290275F505200EFA740 /* FoodOrderingAppUITests.swift */; };
 		AFBF3293275F505200EFA740 /* FoodOrderingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF3292275F505200EFA740 /* FoodOrderingAppUITestsLaunchTests.swift */; };
+		C098D4AEF0DBC80F47CC72F1 /* Pods_FoodOrderingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17DD830B479E097B02F0195 /* Pods_FoodOrderingApp.framework */; };
+		F18D8F438869B92965ABBA2C /* Pods_FoodOrderingApp_FoodOrderingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F77ED9FB17D3AFFAE088849 /* Pods_FoodOrderingApp_FoodOrderingAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +54,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BF3A9D5E8B054CED9005341 /* Pods-FoodOrderingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodOrderingAppTests.release.xcconfig"; path = "Target Support Files/Pods-FoodOrderingAppTests/Pods-FoodOrderingAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		0F77ED9FB17D3AFFAE088849 /* Pods_FoodOrderingApp_FoodOrderingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodOrderingApp_FoodOrderingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34E0C1597DB9F7874D5EC688 /* Pods_FoodOrderingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodOrderingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E64EAC29F9E99FA9FEAAED1 /* Pods-FoodOrderingApp-FoodOrderingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodOrderingApp-FoodOrderingAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodOrderingApp-FoodOrderingAppUITests/Pods-FoodOrderingApp-FoodOrderingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A8F4D67B2F5D6F163BB4F84 /* Pods-FoodOrderingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodOrderingApp.debug.xcconfig"; path = "Target Support Files/Pods-FoodOrderingApp/Pods-FoodOrderingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		83EF071D100DF2D8DCE97233 /* Pods-FoodOrderingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodOrderingApp.release.xcconfig"; path = "Target Support Files/Pods-FoodOrderingApp/Pods-FoodOrderingApp.release.xcconfig"; sourceTree = "<group>"; };
+		AF03505E276697A900816631 /* YemekDetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayVC.swift; sourceTree = "<group>"; };
+		AF03506027669ACA00816631 /* SepetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetVC.swift; sourceTree = "<group>"; };
+		AF03901427610700006B0D0C /* Yemek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yemek.swift; sourceTree = "<group>"; };
+		AF03901627610720006B0D0C /* YemeklerCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemeklerCevap.swift; sourceTree = "<group>"; };
+		AF03901F276131A5006B0D0C /* FoodsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsTableViewCell.swift; sourceTree = "<group>"; };
+		AF047CDE276925F200B54A24 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		AF32539027679EE80004DD67 /* YemekDetayProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayProtocols.swift; sourceTree = "<group>"; };
+		AF3253952767A1980004DD67 /* YemekDetayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayPresenter.swift; sourceTree = "<group>"; };
+		AF3253972767A20C0004DD67 /* YemekDetayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayInteractor.swift; sourceTree = "<group>"; };
+		AF3253992767C8A80004DD67 /* YemekDetayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayRouter.swift; sourceTree = "<group>"; };
+		AF6C89F5276527A400695ECB /* AnasayfaProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaProtocols.swift; sourceTree = "<group>"; };
+		AF6C89F72765298F00695ECB /* AnasayfaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaInteractor.swift; sourceTree = "<group>"; };
+		AF6C89F927652CB600695ECB /* AnasayfaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaPresenter.swift; sourceTree = "<group>"; };
+		AF6C89FB27652D2A00695ECB /* AnasayfaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaRouter.swift; sourceTree = "<group>"; };
 		AFBF326C275F505100EFA740 /* FoodOrderingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodOrderingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBF326F275F505100EFA740 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFBF3271275F505100EFA740 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +87,9 @@
 		AFBF328C275F505200EFA740 /* FoodOrderingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodOrderingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBF3290275F505200EFA740 /* FoodOrderingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOrderingAppUITests.swift; sourceTree = "<group>"; };
 		AFBF3292275F505200EFA740 /* FoodOrderingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOrderingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B25767781E60584261057741 /* Pods-FoodOrderingApp-FoodOrderingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodOrderingApp-FoodOrderingAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FoodOrderingApp-FoodOrderingAppUITests/Pods-FoodOrderingApp-FoodOrderingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DDC55209FCF96693D79436B9 /* Pods-FoodOrderingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodOrderingAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodOrderingAppTests/Pods-FoodOrderingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F17DD830B479E097B02F0195 /* Pods_FoodOrderingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodOrderingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF03505D2766960D00816631 /* Kingfisher in Frameworks */,
+				C098D4AEF0DBC80F47CC72F1 /* Pods_FoodOrderingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E6116F6BB161D63D6314614 /* Pods_FoodOrderingAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +114,116 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18D8F438869B92965ABBA2C /* Pods_FoodOrderingApp_FoodOrderingAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40F700E262AF7580401C57EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A8F4D67B2F5D6F163BB4F84 /* Pods-FoodOrderingApp.debug.xcconfig */,
+				83EF071D100DF2D8DCE97233 /* Pods-FoodOrderingApp.release.xcconfig */,
+				3E64EAC29F9E99FA9FEAAED1 /* Pods-FoodOrderingApp-FoodOrderingAppUITests.debug.xcconfig */,
+				B25767781E60584261057741 /* Pods-FoodOrderingApp-FoodOrderingAppUITests.release.xcconfig */,
+				DDC55209FCF96693D79436B9 /* Pods-FoodOrderingAppTests.debug.xcconfig */,
+				0BF3A9D5E8B054CED9005341 /* Pods-FoodOrderingAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AF039013276106DC006B0D0C /* app-module */ = {
+			isa = PBXGroup;
+			children = (
+				AFBF329F275F50AD00EFA740 /* anasayfa-module */,
+				AFBF32A0275F511D00EFA740 /* yemekdetay-module */,
+				AFBF32A1275F513900EFA740 /* entity */,
+				AFBF32A2275F514A00EFA740 /* sepet-module */,
+			);
+			path = "app-module";
+			sourceTree = "<group>";
+		};
+		AF32538B27679E930004DD67 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AF3253952767A1980004DD67 /* YemekDetayPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		AF32538C27679EA00004DD67 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AF3253972767A20C0004DD67 /* YemekDetayInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		AF32538D27679EB60004DD67 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				AF3253992767C8A80004DD67 /* YemekDetayRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		AF32538E27679EC50004DD67 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AF32539027679EE80004DD67 /* YemekDetayProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		AF32538F27679ECD0004DD67 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AF6C89F02765265300695ECB /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C89F5276527A400695ECB /* AnasayfaProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		AF6C89F12765265C00695ECB /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C89F72765298F00695ECB /* AnasayfaInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		AF6C89F22765266B00695ECB /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C89F927652CB600695ECB /* AnasayfaPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		AF6C89F32765275B00695ECB /* router */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C89FB27652D2A00695ECB /* AnasayfaRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		AF6C89F42765276F00695ECB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AFBF3273275F505100EFA740 /* ViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		AFBF3263275F505100EFA740 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +231,8 @@
 				AFBF3285275F505200EFA740 /* FoodOrderingAppTests */,
 				AFBF328F275F505200EFA740 /* FoodOrderingAppUITests */,
 				AFBF326D275F505100EFA740 /* Products */,
+				40F700E262AF7580401C57EF /* Pods */,
+				E4856DFDD705C433358D3847 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +249,15 @@
 		AFBF326E275F505100EFA740 /* FoodOrderingApp */ = {
 			isa = PBXGroup;
 			children = (
+				AF039013276106DC006B0D0C /* app-module */,
 				AFBF326F275F505100EFA740 /* AppDelegate.swift */,
 				AFBF3271275F505100EFA740 /* SceneDelegate.swift */,
-				AFBF3273275F505100EFA740 /* ViewController.swift */,
 				AFBF3275275F505100EFA740 /* Main.storyboard */,
+				AF03505E276697A900816631 /* YemekDetayVC.swift */,
+				AF03506027669ACA00816631 /* SepetVC.swift */,
 				AFBF3278275F505200EFA740 /* Assets.xcassets */,
+				AF03901F276131A5006B0D0C /* FoodsTableViewCell.swift */,
+				AF047CDE276925F200B54A24 /* CartTableViewCell.swift */,
 				AFBF327A275F505200EFA740 /* LaunchScreen.storyboard */,
 				AFBF327D275F505200EFA740 /* Info.plist */,
 			);
@@ -127,6 +281,56 @@
 			path = FoodOrderingAppUITests;
 			sourceTree = "<group>";
 		};
+		AFBF329F275F50AD00EFA740 /* anasayfa-module */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C89F42765276F00695ECB /* view */,
+				AF6C89F32765275B00695ECB /* router */,
+				AF6C89F22765266B00695ECB /* presenter */,
+				AF6C89F12765265C00695ECB /* interactor */,
+				AF6C89F02765265300695ECB /* protocols */,
+			);
+			path = "anasayfa-module";
+			sourceTree = "<group>";
+		};
+		AFBF32A0275F511D00EFA740 /* yemekdetay-module */ = {
+			isa = PBXGroup;
+			children = (
+				AF32538F27679ECD0004DD67 /* view */,
+				AF32538E27679EC50004DD67 /* protocols */,
+				AF32538D27679EB60004DD67 /* router */,
+				AF32538C27679EA00004DD67 /* interactor */,
+				AF32538B27679E930004DD67 /* presenter */,
+			);
+			path = "yemekdetay-module";
+			sourceTree = "<group>";
+		};
+		AFBF32A1275F513900EFA740 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				AF03901427610700006B0D0C /* Yemek.swift */,
+				AF03901627610720006B0D0C /* YemeklerCevap.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		AFBF32A2275F514A00EFA740 /* sepet-module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "sepet-module";
+			sourceTree = "<group>";
+		};
+		E4856DFDD705C433358D3847 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F17DD830B479E097B02F0195 /* Pods_FoodOrderingApp.framework */,
+				0F77ED9FB17D3AFFAE088849 /* Pods_FoodOrderingApp_FoodOrderingAppUITests.framework */,
+				34E0C1597DB9F7874D5EC688 /* Pods_FoodOrderingAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +338,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFBF3296275F505200EFA740 /* Build configuration list for PBXNativeTarget "FoodOrderingApp" */;
 			buildPhases = (
+				5D85B0CB060D7C4D5E04A3D7 /* [CP] Check Pods Manifest.lock */,
 				AFBF3268275F505100EFA740 /* Sources */,
 				AFBF3269275F505100EFA740 /* Frameworks */,
 				AFBF326A275F505100EFA740 /* Resources */,
+				F50EA7B5FAD32BEFD48D24C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FoodOrderingApp;
+			packageProductDependencies = (
+				AF03505C2766960D00816631 /* Kingfisher */,
+			);
 			productName = FoodOrderingApp;
 			productReference = AFBF326C275F505100EFA740 /* FoodOrderingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +360,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFBF3299275F505200EFA740 /* Build configuration list for PBXNativeTarget "FoodOrderingAppTests" */;
 			buildPhases = (
+				88D3082F686F25DA83BAECF7 /* [CP] Check Pods Manifest.lock */,
 				AFBF327E275F505200EFA740 /* Sources */,
 				AFBF327F275F505200EFA740 /* Frameworks */,
 				AFBF3280275F505200EFA740 /* Resources */,
@@ -169,9 +379,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFBF329C275F505200EFA740 /* Build configuration list for PBXNativeTarget "FoodOrderingAppUITests" */;
 			buildPhases = (
+				C81713FC790ABFE3DE80392D /* [CP] Check Pods Manifest.lock */,
 				AFBF3288275F505200EFA740 /* Sources */,
 				AFBF3289275F505200EFA740 /* Frameworks */,
 				AFBF328A275F505200EFA740 /* Resources */,
+				6BD4E1DBD4041733CC2ED9F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +427,9 @@
 				Base,
 			);
 			mainGroup = AFBF3263275F505100EFA740;
+			packageReferences = (
+				AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = AFBF326D275F505100EFA740 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,13 +468,130 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D85B0CB060D7C4D5E04A3D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodOrderingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BD4E1DBD4041733CC2ED9F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp-FoodOrderingAppUITests/Pods-FoodOrderingApp-FoodOrderingAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp-FoodOrderingAppUITests/Pods-FoodOrderingApp-FoodOrderingAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp-FoodOrderingAppUITests/Pods-FoodOrderingApp-FoodOrderingAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88D3082F686F25DA83BAECF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodOrderingAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C81713FC790ABFE3DE80392D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodOrderingApp-FoodOrderingAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F50EA7B5FAD32BEFD48D24C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp/Pods-FoodOrderingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp/Pods-FoodOrderingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp/Pods-FoodOrderingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFBF3268275F505100EFA740 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AFBF3274275F505100EFA740 /* ViewController.swift in Sources */,
+				AF03901527610700006B0D0C /* Yemek.swift in Sources */,
+				AF03506127669ACA00816631 /* SepetVC.swift in Sources */,
+				AF6C89F82765298F00695ECB /* AnasayfaInteractor.swift in Sources */,
+				AF32539A2767C8A80004DD67 /* YemekDetayRouter.swift in Sources */,
 				AFBF3270275F505100EFA740 /* AppDelegate.swift in Sources */,
+				AF03505F276697A900816631 /* YemekDetayVC.swift in Sources */,
+				AF3253962767A1980004DD67 /* YemekDetayPresenter.swift in Sources */,
+				AF047CDF276925F200B54A24 /* CartTableViewCell.swift in Sources */,
+				AF32539127679EE80004DD67 /* YemekDetayProtocols.swift in Sources */,
+				AF3253982767A20C0004DD67 /* YemekDetayInteractor.swift in Sources */,
+				AF6C89FA27652CB600695ECB /* AnasayfaPresenter.swift in Sources */,
+				AF039020276131A5006B0D0C /* FoodsTableViewCell.swift in Sources */,
+				AF6C89FC27652D2A00695ECB /* AnasayfaRouter.swift in Sources */,
+				AF03901727610720006B0D0C /* YemeklerCevap.swift in Sources */,
+				AF6C89F6276527A400695ECB /* AnasayfaProtocols.swift in Sources */,
 				AFBF3272275F505100EFA740 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +766,7 @@
 		};
 		AFBF3297275F505200EFA740 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8F4D67B2F5D6F163BB4F84 /* Pods-FoodOrderingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +795,7 @@
 		};
 		AFBF3298275F505200EFA740 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83EF071D100DF2D8DCE97233 /* Pods-FoodOrderingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +824,7 @@
 		};
 		AFBF329A275F505200EFA740 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC55209FCF96693D79436B9 /* Pods-FoodOrderingAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +850,7 @@
 		};
 		AFBF329B275F505200EFA740 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF3A9D5E8B054CED9005341 /* Pods-FoodOrderingAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +876,7 @@
 		};
 		AFBF329D275F505200EFA740 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E64EAC29F9E99FA9FEAAED1 /* Pods-FoodOrderingApp-FoodOrderingAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +900,7 @@
 		};
 		AFBF329E275F505200EFA740 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25767781E60584261057741 /* Pods-FoodOrderingApp-FoodOrderingAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -624,6 +962,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF03505C2766960D00816631 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AFBF3264275F505100EFA740 /* Project object */;
 }
