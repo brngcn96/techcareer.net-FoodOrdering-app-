@@ -1,0 +1,6 @@
+framework module Pods_FoodOrderingApp_FoodOrderingAppUITests {
+  umbrella header "Pods-FoodOrderingApp-FoodOrderingAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
