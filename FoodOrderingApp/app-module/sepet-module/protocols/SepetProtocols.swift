@@ -17,7 +17,7 @@ protocol ViewToPresenterSepetProtocol {
 }
 
 protocol PresenterToInteractorSepetProtocol {
-    var anasayfaPresenter:InteractorToPresenterAnasayfaProtocol? {get set}
+    var sepetPresenter:InteractorToPresenterSepetProtocol? {get set}
     
     func tumSepetiAl()
 

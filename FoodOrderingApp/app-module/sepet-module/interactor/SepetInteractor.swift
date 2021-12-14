@@ -11,10 +11,16 @@ import Foundation
 import Alamofire
 
 class SepetInteractor : PresenterToInteractorSepetProtocol {
+    
     var sepetPresenter: InteractorToPresenterSepetProtocol?
     
-    func sepettekileriAl() {
-        AF.request("http://kasimadalan.pe.hu/yemekler/sepettekiYemekleriGetir.php",method: .get).responseJSON{ response in
+    func tumSepetiAl() {
+        
+        
+        let params:Parameters=["kullanici_adi":"baran"]
+        
+        AF.request("http://kasimadalan.pe.hu/yemekler/sepettekiYemekleriGetir.php",method: .post,parameters: params).responseJSON{ response in
+        
             
             if let data = response.data {
                 do{
@@ -26,6 +32,10 @@ class SepetInteractor : PresenterToInteractorSepetProtocol {
                     
                     self.sepetPresenter?.presenteraVeriGonder(sepetListesi: liste)
                     
+                    print("****************")
+                    print(liste[0].sepet_yemek_id!)
+                    
+                    
                 }catch{
                     print(error.localizedDescription)
                 }
@@ -34,38 +44,18 @@ class SepetInteractor : PresenterToInteractorSepetProtocol {
         }
 
     }
+
     
-    func kisiAra(aramaKelimesi: String) {
-        let params:Parameters = ["kisi_ad":aramaKelimesi]
+    func yemekSil(sepet_yemek_id: String) {
+        let params:Parameters = ["sepet_yemek_id":sepet_yemek_id,"kullanici_adi":"baran"]
         
-        Alamofire.request("http://kasimadalan.pe.hu/kisiler/tum_kisiler_arama.php",method: .post,parameters: params).responseJSON{ response in
-            
-            if let data = response.data {
-                do{
-                    let cevap = try JSONDecoder().decode(KisilerCevap.self, from: data)
-                    var liste = [Kisiler]()
-                    if let gelenListe = cevap.kisiler {
-                        liste = gelenListe
-                    }
-                    
-                    self.anasayfaPresenter?.presenteraVeriGonder(kisilerListesi: liste)
-                }catch{
-                    print(error.localizedDescription)
-                }
-            }
-        }
-    }
-    
-    func yemekSil(sepet_yemek_id: Int) {
-        let params:Parameters = ["sepet_yemek_id":sepet_yemek_id]
-        
-        AF.request("http://kasimadalan.pe.hu/kisiler/delete_kisiler.php",method: .post,parameters: params).responseJSON{ response in
+        AF.request("http://kasimadalan.pe.hu/yemekler/sepettenYemekSil.php",method: .post,parameters: params).responseJSON{ response in
             
             if let data = response.data {
                 do{
                     if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
                         print(json)
-                        self.sepettekileriAl()()
+                        self.tumSepetiAl()
                     
                     }
                 }catch{

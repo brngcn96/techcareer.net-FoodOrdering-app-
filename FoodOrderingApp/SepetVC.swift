@@ -9,19 +9,40 @@ import UIKit
 
 class SepetVC: UIViewController {
 
-
+    var sepetPresenterNesnesi:ViewToPresenterSepetProtocol?
     
     @IBOutlet weak var cartTableView: UITableView!
-    var sepetListe = [Yemek]()
+    var sepetListe = [SepetEleman]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        SepetRouter.createModule(ref: self)
         // Do any additional setup after loading the view.
     }
     
-  
+    override func viewWillAppear(_ animated: Bool) {
+        sepetPresenterNesnesi?.sepettekileriYukle()
+    }
+    
+    /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetay" {
+            let kisi = sender as? Se
+            let gidilecekVC = segue.destination as! KisiDetayVC
+            gidilecekVC.kisi = kisi
+        }
+    }
+   */
 
+}
 
+extension SepetVC : PresenterToViewSepetProtocol {
+    func vieweVeriGonder(sepetListesi: Array<SepetEleman>) {
+        self.sepetListe = sepetListesi
+        DispatchQueue.main.async {
+            self.cartTableView.reloadData()
+        }
+    }
 }
 
 extension SepetVC: UITableViewDelegate,UITableViewDataSource{
@@ -39,14 +60,14 @@ extension SepetVC: UITableViewDelegate,UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let yemek = sepetListe[indexPath.row]
+        let sepet_yemek = sepetListe[indexPath.row]
         let hucre = tableView.dequeueReusableCell(withIdentifier: "cartcell", for: indexPath) as! CartTableViewCell
         
-        hucre.foodPriceLabel.text = "\(yemek.yemek_fiyat!) ₺"
-        hucre.foodNameLabel.text = yemek.yemek_adi!
+        hucre.foodPriceLabel.text = "\(sepet_yemek.yemek_fiyat!) ₺"
+        hucre.foodNameLabel.text = sepet_yemek.yemek_adi!
         //hucre.i.text = yemek.yemek_adi
         
-        if let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(yemek.yemek_resim_adi!)"){
+        if let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(sepet_yemek.yemek_resim_adi!)"){
            // DispatchQueue.global().async {
                // let data = try? Data(contentsOf: url)
                 DispatchQueue.main.async{
