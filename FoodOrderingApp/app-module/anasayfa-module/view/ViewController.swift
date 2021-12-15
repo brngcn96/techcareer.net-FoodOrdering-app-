@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
+        let appereance = UINavigationBarAppearance()
+        appereance.titleTextAttributes = [NSAttributedString.Key.font:UIFont(name: "Courgette-Regular", size: 22)!]
+        
+        navigationController?.navigationBar.standardAppearance = appereance
+        navigationController?.navigationBar.compactAppearance = appereance
+        navigationController?.navigationBar.scrollEdgeAppearance = appereance
+        
         yemeklerTableView.delegate = self
         yemeklerTableView.dataSource = self
         

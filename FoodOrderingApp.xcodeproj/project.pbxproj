@@ -24,6 +24,9 @@
 		AF3253962767A1980004DD67 /* YemekDetayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253952767A1980004DD67 /* YemekDetayPresenter.swift */; };
 		AF3253982767A20C0004DD67 /* YemekDetayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253972767A20C0004DD67 /* YemekDetayInteractor.swift */; };
 		AF32539A2767C8A80004DD67 /* YemekDetayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253992767C8A80004DD67 /* YemekDetayRouter.swift */; };
+		AF65367F276A7E4D00E878AB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFBF327D275F505200EFA740 /* Info.plist */; };
+		AF653692276A862500E878AB /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF653690276A862500E878AB /* OFL.txt */; };
+		AF653693276A862500E878AB /* Courgette-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF653691276A862500E878AB /* Courgette-Regular.ttf */; };
 		AF6C89F6276527A400695ECB /* AnasayfaProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89F5276527A400695ECB /* AnasayfaProtocols.swift */; };
 		AF6C89F82765298F00695ECB /* AnasayfaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89F72765298F00695ECB /* AnasayfaInteractor.swift */; };
 		AF6C89FA27652CB600695ECB /* AnasayfaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C89F927652CB600695ECB /* AnasayfaPresenter.swift */; };
@@ -81,6 +84,8 @@
 		AF3253952767A1980004DD67 /* YemekDetayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayPresenter.swift; sourceTree = "<group>"; };
 		AF3253972767A20C0004DD67 /* YemekDetayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayInteractor.swift; sourceTree = "<group>"; };
 		AF3253992767C8A80004DD67 /* YemekDetayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayRouter.swift; sourceTree = "<group>"; };
+		AF653690276A862500E878AB /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		AF653691276A862500E878AB /* Courgette-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Courgette-Regular.ttf"; sourceTree = "<group>"; };
 		AF6C89F5276527A400695ECB /* AnasayfaProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaProtocols.swift; sourceTree = "<group>"; };
 		AF6C89F72765298F00695ECB /* AnasayfaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaInteractor.swift; sourceTree = "<group>"; };
 		AF6C89F927652CB600695ECB /* AnasayfaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaPresenter.swift; sourceTree = "<group>"; };
@@ -233,6 +238,15 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		AF65368F276A85E100E878AB /* New Group2 */ = {
+			isa = PBXGroup;
+			children = (
+				AF653691276A862500E878AB /* Courgette-Regular.ttf */,
+				AF653690276A862500E878AB /* OFL.txt */,
+			);
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
 		AF6C89F02765265300695ECB /* protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +323,7 @@
 				AF047CDE276925F200B54A24 /* CartTableViewCell.swift */,
 				AFBF327A275F505200EFA740 /* LaunchScreen.storyboard */,
 				AFBF327D275F505200EFA740 /* Info.plist */,
+				AF65368F276A85E100E878AB /* New Group2 */,
 			);
 			path = FoodOrderingApp;
 			sourceTree = "<group>";
@@ -481,7 +496,7 @@
 			);
 			mainGroup = AFBF3263275F505100EFA740;
 			packageReferences = (
-				AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
+				AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = AFBF326D275F505100EFA740 /* Products */;
 			projectDirPath = "";
@@ -499,9 +514,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF653693276A862500E878AB /* Courgette-Regular.ttf in Resources */,
+				AF653692276A862500E878AB /* OFL.txt in Resources */,
 				AFBF327C275F505200EFA740 /* LaunchScreen.storyboard in Resources */,
 				AFBF3279275F505200EFA740 /* Assets.xcassets in Resources */,
 				AFBF3277275F505100EFA740 /* Main.storyboard in Resources */,
+				AF65367F276A7E4D00E878AB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1023,7 +1041,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
+		AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
