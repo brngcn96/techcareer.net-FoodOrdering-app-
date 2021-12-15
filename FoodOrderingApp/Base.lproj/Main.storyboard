@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PnA-Rb-V2o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PnA-Rb-V2o">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--Yemekler-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodOrderingApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,9 +51,8 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0n-sP-bAm">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0n-sP-bAm">
                                                     <rect key="frame" x="221" y="116" width="74.5" height="29"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -62,7 +61,10 @@
                                             <constraints>
                                                 <constraint firstItem="5dG-ij-pbW" firstAttribute="leading" secondItem="f9V-kd-i2D" secondAttribute="leadingMargin" id="DHQ-Y4-zkt"/>
                                                 <constraint firstItem="8Um-Oq-jxh" firstAttribute="top" secondItem="f9V-kd-i2D" secondAttribute="topMargin" constant="36" id="L40-CD-qVD"/>
+                                                <constraint firstItem="n0n-sP-bAm" firstAttribute="top" secondItem="8Um-Oq-jxh" secondAttribute="bottom" constant="33" id="Qjx-6m-pyp"/>
                                                 <constraint firstItem="8Um-Oq-jxh" firstAttribute="leading" secondItem="5dG-ij-pbW" secondAttribute="trailing" constant="25" id="T6C-L9-8hp"/>
+                                                <constraint firstItem="n0n-sP-bAm" firstAttribute="leading" secondItem="8Um-Oq-jxh" secondAttribute="leading" id="e6Q-JF-hIi"/>
+                                                <constraint firstItem="n0n-sP-bAm" firstAttribute="trailing" secondItem="8Um-Oq-jxh" secondAttribute="trailing" id="ikb-hn-l6c"/>
                                                 <constraint firstItem="5dG-ij-pbW" firstAttribute="bottom" secondItem="f9V-kd-i2D" secondAttribute="bottomMargin" constant="16" id="sPG-QL-C1Y"/>
                                                 <constraint firstItem="5dG-ij-pbW" firstAttribute="top" secondItem="f9V-kd-i2D" secondAttribute="topMargin" constant="16" id="sPG-Qd-GAH"/>
                                             </constraints>
@@ -88,7 +90,7 @@
                             <constraint firstItem="1DY-ah-inO" firstAttribute="trailing" secondItem="LO0-JE-orP" secondAttribute="trailing" id="pWu-jU-n0s"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="Tkq-nM-JMX">
+                    <navigationItem key="navigationItem" title="Yemekler" id="Tkq-nM-JMX">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="awc-R2-tIT" userLabel="ChartItem">
                             <connections>
                                 <action selector="buttonChartAction:" destination="BYZ-38-t0r" id="cs6-Ae-SbA"/>
@@ -137,7 +139,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="306-XL-sBS">
                                 <rect key="frame" x="154" y="694" width="106" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sepete Ekle"/>
                                 <connections>
                                     <action selector="buttonSepeteEkle:" destination="VBS-ML-2LS" eventType="touchUpInside" id="2dd-oj-Oc9"/>
                                 </connections>
@@ -184,7 +186,7 @@
                         <outlet property="foodNameLabel" destination="F2N-IN-cbp" id="lal-bF-a7I"/>
                         <outlet property="foodPriceLabel" destination="mKH-ja-2we" id="ygS-25-tvS"/>
                         <outlet property="sepetAdetLabel" destination="u89-HF-oz9" id="ZGh-1F-ON0"/>
-                        <segue destination="r3t-MK-qhf" kind="show" identifier="toSepet" id="mEi-mj-CcY"/>
+                        <segue destination="r3t-MK-qhf" kind="show" identifier="toSepete" id="mEi-mj-CcY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWX-Zp-CWh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -199,58 +201,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ltf-Sk-wux">
-                                <rect key="frame" x="0.0" y="110" width="414" height="774"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4c8-M0-RJj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartcell" rowHeight="100" id="LtH-eV-06y" customClass="CartTableViewCell" customModule="FoodOrderingApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartcell" rowHeight="108" id="NPO-ed-YrO" customClass="CartTableViewCell" customModule="FoodOrderingApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LtH-eV-06y" id="y9J-v4-aC4">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NPO-ed-YrO" id="IU9-hO-6wG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lazanya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksj-xX-8Wk">
-                                                    <rect key="frame" x="179" y="11" width="86" height="29"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bWh-YK-4lT">
+                                                    <rect key="frame" x="10" y="10" width="83" height="88"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="83" id="qEi-LF-vy9"/>
+                                                        <constraint firstAttribute="height" constant="90" id="zBj-CT-IDx"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yemek Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wx-eo-mga">
+                                                    <rect key="frame" x="129" y="16" width="170" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1c-66-TJh">
-                                                    <rect key="frame" x="179" y="48" width="71" height="23"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="1 X 44 ₺">
-                                                            <attributes>
-                                                                <font key="NSFont" size="20" name=".SFNS-Regular"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fiyat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd0-vO-8M1">
+                                                    <rect key="frame" x="129" y="48" width="55" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r2T-lI-eKx">
-                                                    <rect key="frame" x="36" y="5" width="90" height="84"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="JQ1-Yf-Nvh"/>
-                                                    </constraints>
-                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Ksj-xX-8Wk" firstAttribute="leading" secondItem="r2T-lI-eKx" secondAttribute="trailing" constant="53" id="8bi-Th-Idy"/>
-                                                <constraint firstItem="Ksj-xX-8Wk" firstAttribute="leading" secondItem="R1c-66-TJh" secondAttribute="leading" id="CSh-zD-i5G"/>
-                                                <constraint firstItem="R1c-66-TJh" firstAttribute="top" secondItem="Ksj-xX-8Wk" secondAttribute="bottom" constant="8" id="IjT-H3-14g"/>
-                                                <constraint firstItem="r2T-lI-eKx" firstAttribute="bottom" secondItem="y9J-v4-aC4" secondAttribute="bottomMargin" id="M9J-L2-TNg"/>
-                                                <constraint firstItem="r2T-lI-eKx" firstAttribute="leading" secondItem="y9J-v4-aC4" secondAttribute="leadingMargin" constant="16" id="SMl-mk-JlR"/>
-                                                <constraint firstItem="Ksj-xX-8Wk" firstAttribute="top" secondItem="y9J-v4-aC4" secondAttribute="topMargin" id="joK-wl-nLC"/>
-                                                <constraint firstItem="r2T-lI-eKx" firstAttribute="top" secondItem="y9J-v4-aC4" secondAttribute="topMargin" constant="-6" id="pXL-4J-IbU"/>
+                                                <constraint firstItem="bWh-YK-4lT" firstAttribute="leading" secondItem="IU9-hO-6wG" secondAttribute="leading" constant="10" id="9q0-b6-1Yc"/>
+                                                <constraint firstAttribute="bottom" secondItem="bWh-YK-4lT" secondAttribute="bottom" constant="10" id="VKW-oq-eIL"/>
+                                                <constraint firstItem="bWh-YK-4lT" firstAttribute="top" secondItem="IU9-hO-6wG" secondAttribute="top" constant="10" id="YfA-0T-JeR"/>
                                             </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
-                                            </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cartImageView" destination="r2T-lI-eKx" id="cRj-rG-o74"/>
-                                            <outlet property="foodNameLabel" destination="Ksj-xX-8Wk" id="GgR-qD-vj0"/>
-                                            <outlet property="foodPriceLabel" destination="R1c-66-TJh" id="YEK-Xs-IHq"/>
+                                            <outlet property="cartImageView" destination="bWh-YK-4lT" id="YvG-8R-pOc"/>
+                                            <outlet property="foodNameLabel" destination="2wx-eo-mga" id="Xz5-7J-OJ5"/>
+                                            <outlet property="foodPriceLabel" destination="Gd0-vO-8M1" id="KXz-fZ-TZR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -258,16 +252,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AxT-0k-LKd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="AxT-0k-LKd" firstAttribute="trailing" secondItem="Ltf-Sk-wux" secondAttribute="trailing" id="4tt-GE-xKT"/>
-                            <constraint firstItem="Ltf-Sk-wux" firstAttribute="leading" secondItem="AxT-0k-LKd" secondAttribute="leading" id="Dk4-iH-zVX"/>
-                            <constraint firstItem="Ltf-Sk-wux" firstAttribute="top" secondItem="AxT-0k-LKd" secondAttribute="top" id="HFM-OQ-ITf"/>
-                            <constraint firstItem="AxT-0k-LKd" firstAttribute="bottom" secondItem="Ltf-Sk-wux" secondAttribute="bottom" id="sQj-Yx-TMp"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sepetim" id="tON-MB-9qD"/>
                     <connections>
-                        <outlet property="cartTableView" destination="Ltf-Sk-wux" id="tY5-HR-Dia"/>
+                        <outlet property="cartTableView" destination="4c8-M0-RJj" id="uH7-zm-Av0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Oa-2L-Rhr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -294,7 +282,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9Gi-r8-hZO"/>
+        <segue reference="mEi-mj-CcY"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>

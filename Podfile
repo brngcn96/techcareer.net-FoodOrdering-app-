@@ -7,7 +7,10 @@ target 'FoodOrderingApp' do
 
   # Pods for FoodOrderingApp
 
-    pod 'Alamofire', '~> 5.4'	
+	pod 'Alamofire', '~> 5.4'
+	pod 'Kingfisher', '~> 7.0'
+
+    	
 
   target 'FoodOrderingAppTests' do
     inherit! :search_paths

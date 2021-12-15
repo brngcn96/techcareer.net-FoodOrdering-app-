@@ -32,8 +32,8 @@ class SepetInteractor : PresenterToInteractorSepetProtocol {
                     
                     self.sepetPresenter?.presenteraVeriGonder(sepetListesi: liste)
                     
-                    print("****************")
-                    print(liste[0].sepet_yemek_id!)
+                    
+                    //print(liste[0].yemek_adi!)
                     
                     
                 }catch{

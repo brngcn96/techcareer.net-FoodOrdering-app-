@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E6116F6BB161D63D6314614 /* Pods_FoodOrderingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E0C1597DB9F7874D5EC688 /* Pods_FoodOrderingAppTests.framework */; };
-		AF03505D2766960D00816631 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF03505C2766960D00816631 /* Kingfisher */; };
 		AF03505F276697A900816631 /* YemekDetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03505E276697A900816631 /* YemekDetayVC.swift */; };
 		AF03506127669ACA00816631 /* SepetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03506027669ACA00816631 /* SepetVC.swift */; };
 		AF03901527610700006B0D0C /* Yemek.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF03901427610700006B0D0C /* Yemek.swift */; };
@@ -38,7 +37,7 @@
 		AFBF3287275F505200EFA740 /* FoodOrderingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF3286275F505200EFA740 /* FoodOrderingAppTests.swift */; };
 		AFBF3291275F505200EFA740 /* FoodOrderingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF3290275F505200EFA740 /* FoodOrderingAppUITests.swift */; };
 		AFBF3293275F505200EFA740 /* FoodOrderingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF3292275F505200EFA740 /* FoodOrderingAppUITestsLaunchTests.swift */; };
-		C098D4AEF0DBC80F47CC72F1 /* Pods_FoodOrderingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17DD830B479E097B02F0195 /* Pods_FoodOrderingApp.framework */; };
+		D481504517B206011EA4881F /* Pods_FoodOrderingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17DD830B479E097B02F0195 /* Pods_FoodOrderingApp.framework */; };
 		F18D8F438869B92965ABBA2C /* Pods_FoodOrderingApp_FoodOrderingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F77ED9FB17D3AFFAE088849 /* Pods_FoodOrderingApp_FoodOrderingAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,8 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF03505D2766960D00816631 /* Kingfisher in Frameworks */,
-				C098D4AEF0DBC80F47CC72F1 /* Pods_FoodOrderingApp.framework in Frameworks */,
+				D481504517B206011EA4881F /* Pods_FoodOrderingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,16 +398,13 @@
 				AFBF3268275F505100EFA740 /* Sources */,
 				AFBF3269275F505100EFA740 /* Frameworks */,
 				AFBF326A275F505100EFA740 /* Resources */,
-				F50EA7B5FAD32BEFD48D24C8 /* [CP] Embed Pods Frameworks */,
+				5207BFEC5F5F89ED0672FBA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FoodOrderingApp;
-			packageProductDependencies = (
-				AF03505C2766960D00816631 /* Kingfisher */,
-			);
 			productName = FoodOrderingApp;
 			productReference = AFBF326C275F505100EFA740 /* FoodOrderingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -441,7 +436,7 @@
 				AFBF3288275F505200EFA740 /* Sources */,
 				AFBF3289275F505200EFA740 /* Frameworks */,
 				AFBF328A275F505200EFA740 /* Resources */,
-				6BD4E1DBD4041733CC2ED9F1 /* [CP] Embed Pods Frameworks */,
+				2AF361B9F8F592104FC414D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -486,7 +481,7 @@
 			);
 			mainGroup = AFBF3263275F505100EFA740;
 			packageReferences = (
-				AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
 			);
 			productRefGroup = AFBF326D275F505100EFA740 /* Products */;
 			projectDirPath = "";
@@ -527,6 +522,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2AF361B9F8F592104FC414D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp-FoodOrderingAppUITests/Pods-FoodOrderingApp-FoodOrderingAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp-FoodOrderingAppUITests/Pods-FoodOrderingApp-FoodOrderingAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp-FoodOrderingAppUITests/Pods-FoodOrderingApp-FoodOrderingAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5207BFEC5F5F89ED0672FBA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp/Pods-FoodOrderingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp/Pods-FoodOrderingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp/Pods-FoodOrderingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5D85B0CB060D7C4D5E04A3D7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -547,23 +576,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6BD4E1DBD4041733CC2ED9F1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp-FoodOrderingAppUITests/Pods-FoodOrderingApp-FoodOrderingAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp-FoodOrderingAppUITests/Pods-FoodOrderingApp-FoodOrderingAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp-FoodOrderingAppUITests/Pods-FoodOrderingApp-FoodOrderingAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		88D3082F686F25DA83BAECF7 /* [CP] Check Pods Manifest.lock */ = {
@@ -608,23 +620,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F50EA7B5FAD32BEFD48D24C8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp/Pods-FoodOrderingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp/Pods-FoodOrderingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodOrderingApp/Pods-FoodOrderingApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1028,7 +1023,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -1037,14 +1032,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AF03505C2766960D00816631 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AF03505B2766960D00816631 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AFBF3264275F505100EFA740 /* Project object */;
 }

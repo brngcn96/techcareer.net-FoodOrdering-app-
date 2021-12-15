@@ -25,6 +25,9 @@ class YemekDetayVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = yemek?.yemek_adi
+        
         sepetAdetLabel.text = "0"
         if let y = yemek{
             foodNameLabel.text = y.yemek_adi

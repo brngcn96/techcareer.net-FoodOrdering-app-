@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         yemeklerTableView.dataSource = self
         
         AnasayfaRouter.createModule(ref: self)
-        //sepetTest()
+        sepetTest()
         // Do any additional setup after loading the view.
     }
     
@@ -49,17 +49,10 @@ class ViewController: UIViewController {
     @IBAction func buttonChartAction(_ sender: Any) {
         performSegue(withIdentifier: "toSepet", sender: nil)
         
-    }
-    
-    /*
-    func configureItems(){
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .done, target: self, action: nil )
-
     }
-   
     
-    
+
     
     func sepetTest(){
         let params:Parameters=["kullanici_adi":"baran"]
@@ -81,9 +74,6 @@ class ViewController: UIViewController {
             
         }
     }
-     
-     */
-    
 
 
 }
