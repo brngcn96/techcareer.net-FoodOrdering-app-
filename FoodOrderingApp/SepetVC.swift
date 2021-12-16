@@ -11,6 +11,7 @@ class SepetVC: UIViewController {
 
     var sepetPresenterNesnesi:ViewToPresenterSepetProtocol?
     
+    @IBOutlet weak var toplamTutarLabel: UILabel!
     @IBOutlet weak var cartTableView: UITableView!
     var sepetListe = [SepetEleman]()
     override func viewDidLoad() {
@@ -45,7 +46,15 @@ class SepetVC: UIViewController {
 extension SepetVC : PresenterToViewSepetProtocol {
     func vieweVeriGonder(sepetListesi: Array<SepetEleman>) {
         self.sepetListe = sepetListesi
+        
+        var total = 0
+        sepetListe.forEach { sepet_yemek in
+
+            total = total + (Int)(sepet_yemek.yemek_siparis_adet!)! * (Int)(sepet_yemek.yemek_fiyat!)!
+        }
         DispatchQueue.main.async {
+            
+            self.toplamTutarLabel.text = "\(total)₺"
             self.cartTableView.reloadData()
         }
     }
@@ -70,7 +79,7 @@ extension SepetVC: UITableViewDelegate,UITableViewDataSource{
         let hucre = tableView.dequeueReusableCell(withIdentifier: "cartcell", for: indexPath) as! CartTableViewCell
         
         print(sepet_yemek.yemek_adi!)
-        hucre.foodPriceLabel.text = "\(sepet_yemek.yemek_fiyat!) ₺"
+        hucre.foodPriceLabel.text = "\(sepet_yemek.yemek_fiyat!) ₺  X \(sepet_yemek.yemek_siparis_adet!) "
         hucre.foodNameLabel.text = sepet_yemek.yemek_adi!
         
 

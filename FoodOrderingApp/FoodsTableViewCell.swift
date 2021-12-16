@@ -15,6 +15,7 @@ class FoodsTableViewCell:UITableViewCell {
     
     @IBOutlet weak var foodNameLabel: UILabel!
     
+    @IBOutlet weak var likeButton: UIButton!
     
     
     @IBOutlet weak var foodPriceLabel: UILabel!
@@ -31,5 +32,21 @@ class FoodsTableViewCell:UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    
+    @IBAction func likeButtonClicked(_ sender: Any) {
+        if likeButton.tag == 0 // Boş
+        {
+            likeButton.setImage(UIImage(named: "LikeFilled"), for: .normal)
+            likeButton.tag = 1
+        }
+        else  // Dolu
+        {
+            likeButton.setImage(UIImage(named: "LikeBorder"), for: .normal)
+            likeButton.tag = 0
+        }
+        
+        
+    }
+    
 }

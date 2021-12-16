@@ -16,22 +16,29 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var yemeklerTableView: UITableView!
     
+    @IBOutlet weak var yemeklerSearchBar: UISearchBar!
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        
         let appereance = UINavigationBarAppearance()
-        appereance.titleTextAttributes = [NSAttributedString.Key.font:UIFont(name: "Courgette-Regular", size: 22)!]
+        appereance.titleTextAttributes = [NSAttributedString.Key.font:UIFont(name: "Courier-Bold", size: 22)]
         
         navigationController?.navigationBar.standardAppearance = appereance
         navigationController?.navigationBar.compactAppearance = appereance
-        navigationController?.navigationBar.scrollEdgeAppearance = appereance
+        navigationController?.navigationBar.standardAppearance = appereance
+         
+         
+        
+        
         
         yemeklerTableView.delegate = self
         yemeklerTableView.dataSource = self
         
         AnasayfaRouter.createModule(ref: self)
         sepetTest()
+
         // Do any additional setup after loading the view.
     }
     
@@ -51,7 +58,8 @@ class ViewController: UIViewController {
             
         }
     }
-    
+
+
     
     @IBAction func buttonChartAction(_ sender: Any) {
         performSegue(withIdentifier: "toSepet", sender: nil)
@@ -100,6 +108,7 @@ extension ViewController : PresenterToViewAnasayfaProtocol {
 extension ViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        yemeklerSearchBar.placeholder = "\(yemeklerListe.count) yemek arasında ara"
         return yemeklerListe.count
     }
     
