@@ -20,6 +20,7 @@
 		AF047CEC2769328900B54A24 /* SepetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CEB2769328900B54A24 /* SepetRouter.swift */; };
 		AF047CEE2769363B00B54A24 /* SepetEleman.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CED2769363B00B54A24 /* SepetEleman.swift */; };
 		AF047CF02769364900B54A24 /* SepetCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CEF2769364900B54A24 /* SepetCevap.swift */; };
+		AF1131D8276BE9DE009B052B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1131D7276BE9DE009B052B /* WelcomeViewController.swift */; };
 		AF32539127679EE80004DD67 /* YemekDetayProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF32539027679EE80004DD67 /* YemekDetayProtocols.swift */; };
 		AF3253962767A1980004DD67 /* YemekDetayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253952767A1980004DD67 /* YemekDetayPresenter.swift */; };
 		AF3253982767A20C0004DD67 /* YemekDetayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253972767A20C0004DD67 /* YemekDetayInteractor.swift */; };
@@ -79,6 +80,7 @@
 		AF047CEB2769328900B54A24 /* SepetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetRouter.swift; sourceTree = "<group>"; };
 		AF047CED2769363B00B54A24 /* SepetEleman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetEleman.swift; sourceTree = "<group>"; };
 		AF047CEF2769364900B54A24 /* SepetCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetCevap.swift; sourceTree = "<group>"; };
+		AF1131D7276BE9DE009B052B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		AF32539027679EE80004DD67 /* YemekDetayProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayProtocols.swift; sourceTree = "<group>"; };
 		AF3253952767A1980004DD67 /* YemekDetayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayPresenter.swift; sourceTree = "<group>"; };
 		AF3253972767A20C0004DD67 /* YemekDetayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayInteractor.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				AFBF326F275F505100EFA740 /* AppDelegate.swift */,
 				AFBF3271275F505100EFA740 /* SceneDelegate.swift */,
 				AFBF3275275F505100EFA740 /* Main.storyboard */,
+				AF1131D7276BE9DE009B052B /* WelcomeViewController.swift */,
 				AF03505E276697A900816631 /* YemekDetayVC.swift */,
 				AF03506027669ACA00816631 /* SepetVC.swift */,
 				AFBF3278275F505200EFA740 /* Assets.xcassets */,
@@ -654,6 +657,7 @@
 				AF047CE62769325900B54A24 /* SepetProtocols.swift in Sources */,
 				AF047CEC2769328900B54A24 /* SepetRouter.swift in Sources */,
 				AFBF3270275F505100EFA740 /* AppDelegate.swift in Sources */,
+				AF1131D8276BE9DE009B052B /* WelcomeViewController.swift in Sources */,
 				AF047CEA2769327D00B54A24 /* SepetPresenter.swift in Sources */,
 				AF03505F276697A900816631 /* YemekDetayVC.swift in Sources */,
 				AF3253962767A1980004DD67 /* YemekDetayPresenter.swift in Sources */,
