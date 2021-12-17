@@ -11,6 +11,7 @@ class SepetVC: UIViewController {
 
     var sepetPresenterNesnesi:ViewToPresenterSepetProtocol?
     
+    @IBOutlet weak var sepetBadgeItem: UITabBarItem!
     @IBOutlet weak var toplamTutarLabel: UILabel!
     @IBOutlet weak var cartTableView: UITableView!
     var sepetListe = [SepetEleman]()
@@ -56,6 +57,7 @@ extension SepetVC : PresenterToViewSepetProtocol {
             
             self.toplamTutarLabel.text = "\(total)₺"
             self.cartTableView.reloadData()
+            self.sepetBadgeItem.badgeValue = "\(sepetListesi.count)"
         }
     }
 }
