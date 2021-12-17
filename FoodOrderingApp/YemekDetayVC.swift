@@ -19,7 +19,7 @@ class YemekDetayVC: UIViewController {
     @IBOutlet weak var foodPriceLabel: UILabel!
     @IBOutlet weak var sepetAdetLabel: UILabel!
     var yemek:Yemek?
-    var adet = 0
+    var adet = 1
     
     var yemekDetayPresenterNesnesi:ViewToPresenterYemekDetayProtocol?
 
@@ -28,7 +28,7 @@ class YemekDetayVC: UIViewController {
         
         navigationItem.title = yemek?.yemek_adi
         
-        sepetAdetLabel.text = "0"
+        sepetAdetLabel.text = "1"
         if let y = yemek{
             foodNameLabel.text = y.yemek_adi
             foodPriceLabel.text = y.yemek_fiyat

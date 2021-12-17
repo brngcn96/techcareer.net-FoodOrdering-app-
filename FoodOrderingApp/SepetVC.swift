@@ -7,7 +7,9 @@
 
 import UIKit
 
-class SepetVC: UIViewController {
+class SepetVC: UIViewController,YourCellDelegate {
+
+    
 
     var sepetPresenterNesnesi:ViewToPresenterSepetProtocol?
     
@@ -32,15 +34,29 @@ class SepetVC: UIViewController {
         sepetPresenterNesnesi?.sepettekileriYukle()
     }
     
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toDetay" {
-            let kisi = sender as? Yemek
-            let gidilecekVC = segue.destination as! SepetVC
-            gidilecekVC.kisi = kisi
-        }
+    func didPressButton(_ tag: Int) {
+        
+            print("tıklandı \(tag)")
+
+            
+            let sepet_yemek = self.sepetListe[tag]
+            
+            let alert = UIAlertController(title: "Sepetten Kaldır", message: "\(sepet_yemek.yemek_adi!) sepetinizden kaldırılsın mı?", preferredStyle: .alert)
+            let iptalAction = UIAlertAction(title: "İptal", style: .cancel){ action in
+                
+            }
+            alert.addAction(iptalAction)
+            let evetAction = UIAlertAction(title: "Kaldır", style: .destructive){ action in
+                self.sepetPresenterNesnesi?.sil(sepet_yemek_id: sepet_yemek.sepet_yemek_id!)
+            }
+            alert.addAction(evetAction)
+            self.present(alert, animated: true)
+        
     }
-   */
+    
+
+
+        
 
 }
 
@@ -80,6 +96,10 @@ extension SepetVC: UITableViewDelegate,UITableViewDataSource{
         let sepet_yemek = sepetListe[indexPath.row]
         let hucre = tableView.dequeueReusableCell(withIdentifier: "cartcell", for: indexPath) as! CartTableViewCell
         
+        hucre.cellDelegate = self
+        hucre.trashbutton.tag = indexPath.row
+        
+        
         print(sepet_yemek.yemek_adi!)
         hucre.foodPriceLabel.text = "\(sepet_yemek.yemek_fiyat!) ₺  X \(sepet_yemek.yemek_siparis_adet!) "
         hucre.foodNameLabel.text = sepet_yemek.yemek_adi!
@@ -104,16 +124,16 @@ extension SepetVC: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        let silAction = UIContextualAction(style: .destructive, title: "Sil"){ (contextualAction,view,bool) in
+        let silAction = UIContextualAction(style: .destructive, title: "Kaldır"){ (contextualAction,view,bool) in
             
             let sepet_yemek = self.sepetListe[indexPath.row]
             
-            let alert = UIAlertController(title: "Silme İşlemi", message: "\(sepet_yemek.yemek_adi!) silinsin mi?", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Sepetten Kaldır", message: "\(sepet_yemek.yemek_adi!) sepetinizden kaldırılsın mı?", preferredStyle: .alert)
             let iptalAction = UIAlertAction(title: "İptal", style: .cancel){ action in
                 
             }
             alert.addAction(iptalAction)
-            let evetAction = UIAlertAction(title: "Evet", style: .destructive){ action in
+            let evetAction = UIAlertAction(title: "Kaldır", style: .destructive){ action in
                 self.sepetPresenterNesnesi?.sil(sepet_yemek_id: sepet_yemek.sepet_yemek_id!)
             }
             alert.addAction(evetAction)

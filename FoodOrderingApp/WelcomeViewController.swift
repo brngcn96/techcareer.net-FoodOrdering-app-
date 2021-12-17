@@ -19,6 +19,7 @@ class WelcomeViewController: UIViewController {
     @IBAction func buttonYemeklereGit(_ sender: Any) {
         performSegue(withIdentifier: "toYemekler", sender: nil)
         
+        
     }
     /*
     // MARK: - Navigation

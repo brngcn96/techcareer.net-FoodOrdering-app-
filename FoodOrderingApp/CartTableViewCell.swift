@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol YourCellDelegate {
+    func didPressButton(_ tag: Int)
+}
+
 class CartTableViewCell: UITableViewCell {
+    
+    var cellDelegate: YourCellDelegate?
     
     @IBOutlet weak var cartImageView: UIImageView!
     
@@ -15,7 +21,8 @@ class CartTableViewCell: UITableViewCell {
     
     @IBOutlet weak var foodPriceLabel: UILabel!
     
-
+    @IBOutlet weak var trashbutton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,4 +34,8 @@ class CartTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func trashButtonClicked(_ sender: UIButton) {
+        cellDelegate?.didPressButton(sender.tag)
+       
+    }
 }
