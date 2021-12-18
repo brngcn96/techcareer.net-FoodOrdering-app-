@@ -22,7 +22,6 @@
 		AF047CF02769364900B54A24 /* SepetCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF047CEF2769364900B54A24 /* SepetCevap.swift */; };
 		AF1131D8276BE9DE009B052B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1131D7276BE9DE009B052B /* WelcomeViewController.swift */; };
 		AF29981B276D24580041D08A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29981A276D24580041D08A /* MapViewController.swift */; };
-		AF29981D276D272A0041D08A /* EkstraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29981C276D272A0041D08A /* EkstraViewController.swift */; };
 		AF32539127679EE80004DD67 /* YemekDetayProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF32539027679EE80004DD67 /* YemekDetayProtocols.swift */; };
 		AF3253962767A1980004DD67 /* YemekDetayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253952767A1980004DD67 /* YemekDetayPresenter.swift */; };
 		AF3253982767A20C0004DD67 /* YemekDetayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3253972767A20C0004DD67 /* YemekDetayInteractor.swift */; };
@@ -84,7 +83,6 @@
 		AF047CEF2769364900B54A24 /* SepetCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetCevap.swift; sourceTree = "<group>"; };
 		AF1131D7276BE9DE009B052B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		AF29981A276D24580041D08A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		AF29981C276D272A0041D08A /* EkstraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkstraViewController.swift; sourceTree = "<group>"; };
 		AF32539027679EE80004DD67 /* YemekDetayProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayProtocols.swift; sourceTree = "<group>"; };
 		AF3253952767A1980004DD67 /* YemekDetayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayPresenter.swift; sourceTree = "<group>"; };
 		AF3253972767A20C0004DD67 /* YemekDetayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayInteractor.swift; sourceTree = "<group>"; };
@@ -176,6 +174,7 @@
 		AF047CE12769321700B54A24 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				AF03506027669ACA00816631 /* SepetVC.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -239,6 +238,7 @@
 		AF32538F27679ECD0004DD67 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				AF03505E276697A900816631 /* YemekDetayVC.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -292,6 +292,24 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		AFBE615E276E17580036B00A /* tableviewcells */ = {
+			isa = PBXGroup;
+			children = (
+				AF03901F276131A5006B0D0C /* FoodsTableViewCell.swift */,
+				AF047CDE276925F200B54A24 /* CartTableViewCell.swift */,
+			);
+			path = tableviewcells;
+			sourceTree = "<group>";
+		};
+		AFBE615F276E17C40036B00A /* ekstraviews */ = {
+			isa = PBXGroup;
+			children = (
+				AF1131D7276BE9DE009B052B /* WelcomeViewController.swift */,
+				AF29981A276D24580041D08A /* MapViewController.swift */,
+			);
+			path = ekstraviews;
+			sourceTree = "<group>";
+		};
 		AFBF3263275F505100EFA740 = {
 			isa = PBXGroup;
 			children = (
@@ -317,18 +335,13 @@
 		AFBF326E275F505100EFA740 /* FoodOrderingApp */ = {
 			isa = PBXGroup;
 			children = (
+				AFBE615F276E17C40036B00A /* ekstraviews */,
+				AFBE615E276E17580036B00A /* tableviewcells */,
 				AF039013276106DC006B0D0C /* app-module */,
 				AFBF326F275F505100EFA740 /* AppDelegate.swift */,
 				AFBF3271275F505100EFA740 /* SceneDelegate.swift */,
 				AFBF3275275F505100EFA740 /* Main.storyboard */,
-				AF29981C276D272A0041D08A /* EkstraViewController.swift */,
-				AF1131D7276BE9DE009B052B /* WelcomeViewController.swift */,
-				AF03505E276697A900816631 /* YemekDetayVC.swift */,
-				AF29981A276D24580041D08A /* MapViewController.swift */,
-				AF03506027669ACA00816631 /* SepetVC.swift */,
 				AFBF3278275F505200EFA740 /* Assets.xcassets */,
-				AF03901F276131A5006B0D0C /* FoodsTableViewCell.swift */,
-				AF047CDE276925F200B54A24 /* CartTableViewCell.swift */,
 				AFBF327A275F505200EFA740 /* LaunchScreen.storyboard */,
 				AFBF327D275F505200EFA740 /* Info.plist */,
 				AF65368F276A85E100E878AB /* New Group2 */,
@@ -666,7 +679,6 @@
 				AFBF3270275F505100EFA740 /* AppDelegate.swift in Sources */,
 				AF1131D8276BE9DE009B052B /* WelcomeViewController.swift in Sources */,
 				AF047CEA2769327D00B54A24 /* SepetPresenter.swift in Sources */,
-				AF29981D276D272A0041D08A /* EkstraViewController.swift in Sources */,
 				AF03505F276697A900816631 /* YemekDetayVC.swift in Sources */,
 				AF3253962767A1980004DD67 /* YemekDetayPresenter.swift in Sources */,
 				AF047CDF276925F200B54A24 /* CartTableViewCell.swift in Sources */,

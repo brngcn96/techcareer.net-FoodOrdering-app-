@@ -8,7 +8,7 @@
 import UIKit
 
 protocol YourCellDelegate {
-    func didPressButton(_ tag: Int)
+    func didPressTrashButton(_ tag: Int)
 }
 
 class CartTableViewCell: UITableViewCell {
@@ -35,7 +35,8 @@ class CartTableViewCell: UITableViewCell {
     }
 
     @IBAction func trashButtonClicked(_ sender: UIButton) {
-        cellDelegate?.didPressButton(sender.tag)
+        cellDelegate?.didPressTrashButton(sender.tag)
        
     }
+
 }

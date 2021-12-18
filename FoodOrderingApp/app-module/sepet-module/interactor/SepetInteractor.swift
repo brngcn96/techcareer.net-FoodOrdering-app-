@@ -38,6 +38,7 @@ class SepetInteractor : PresenterToInteractorSepetProtocol {
                     
                 }catch{
                     print(error.localizedDescription)
+                    self.sepetPresenter?.presenteraVeriGonder(sepetListesi: [])
                 }
             }
             

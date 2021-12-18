@@ -11,6 +11,7 @@ import Alamofire
 
 class AnasayfaInteractor : PresenterToInteractorAnasayfaProtocol {
     
+    
     var anasayfaPresenter: InteractorToPresenterAnasayfaProtocol?
     
     func tumYemekleriAl() {
@@ -35,30 +36,24 @@ class AnasayfaInteractor : PresenterToInteractorAnasayfaProtocol {
 
     }
     
-    /*
-    
-    func yemekAra(aramaKelimesi: String) {
-        let params:Parameters = ["yemek_adi":aramaKelimesi]
+    func sepeteYemekEkle(yemek_adi: String, yemek_resim_adi: String, yemek_fiyat: Int, yemek_siparis_adet: Int, kullanici_adi: String) {
+        let params:Parameters = ["yemek_adi":yemek_adi,"yemek_resim_adi":yemek_resim_adi,"yemek_fiyat":yemek_fiyat
+                                 ,"yemek_siparis_adet":yemek_siparis_adet,"kullanici_adi":kullanici_adi]
         
-        AF.request("http://kasimadalan.pe.hu/kisiler/tum_kisiler_arama.php",method: .post,parameters: params).responseJSON{ response in
+        AF.request("http://kasimadalan.pe.hu/yemekler/sepeteYemekEkle.php",method: .post,parameters: params).responseJSON{ response in
             
             if let data = response.data {
                 do{
-                    let cevap = try JSONDecoder().decode(YemeklerCevap.self, from: data)
-                    var liste = [Yemek]()
-                    if let gelenListe = cevap.yemekler {
-                        liste = gelenListe
+                    if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
+                        print(json)
                     }
-                    
-                    self.anasayfaPresenter?.presenteraVeriGonder(yemeklerListesi: liste)
                 }catch{
                     print(error.localizedDescription)
                 }
             }
+            
         }
     }
-     
-     */
     
     func yemekSil(yemek_id: String) {
         let params:Parameters = ["yemek_id":yemek_id]

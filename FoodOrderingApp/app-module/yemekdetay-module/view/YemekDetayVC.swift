@@ -65,7 +65,18 @@ class YemekDetayVC: UIViewController {
         
         if let y = yemek{
             yemekDetayPresenterNesnesi?.yemekEkle(yemek_adi: y.yemek_adi!, yemek_resim_adi: y.yemek_resim_adi!, yemek_fiyat: Int(y.yemek_fiyat!)!, yemek_siparis_adet: adet, kullanici_adi: "baran")
+            
+            let alert = UIAlertController(title: "Sepete Ekle", message: "\(y.yemek_adi!) sepetinize eklendi!", preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "Tamam", style: .default){ action in
+                
+            }
+            alert.addAction(OKAction)
+
+            
+            self.present(alert, animated: true)
         }
+        
+        
 
     }
 

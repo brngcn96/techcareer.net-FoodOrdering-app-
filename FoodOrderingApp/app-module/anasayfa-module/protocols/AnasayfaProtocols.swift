@@ -13,7 +13,7 @@ protocol ViewToPresenterAnasayfaProtocol {
     var anasayfaView:PresenterToViewAnasayfaProtocol? {get set}
     
     func yemekleriYukle()
-    //func ara(aramaKelimesi:String)
+    func yemekEkle(yemek_adi:String,yemek_resim_adi:String,yemek_fiyat:Int,yemek_siparis_adet:Int,kullanici_adi:String)
     func sil(yemek_id:String)
 }
 
@@ -21,7 +21,7 @@ protocol PresenterToInteractorAnasayfaProtocol {
     var anasayfaPresenter:InteractorToPresenterAnasayfaProtocol? {get set}
     
     func tumYemekleriAl()
-    //func yemekAra(aramaKelimesi:String)
+    func sepeteYemekEkle(yemek_adi:String,yemek_resim_adi:String,yemek_fiyat:Int,yemek_siparis_adet:Int,kullanici_adi:String)
     func yemekSil(yemek_id:String)
 }
 

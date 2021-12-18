@@ -70,6 +70,34 @@ class ViewController: UIViewController {
         
     }
     
+    
+    @IBAction func buttonAddCartAction(_ sender: UIButton) {
+        let point = sender.convert(CGPoint.zero, to: yemeklerTableView)
+        guard let indexPath = yemeklerTableView.indexPathForRow(at: point)
+        else{return}
+        
+        let yemek = filteredYemeklerListe[indexPath.row]
+        anasayfaPresenterNesnesi?.yemekEkle(yemek_adi: yemek.yemek_adi!, yemek_resim_adi: yemek.yemek_resim_adi!, yemek_fiyat: (Int)(yemek.yemek_fiyat!)!, yemek_siparis_adet: 1, kullanici_adi: "baran")
+        
+        
+        let alert = UIAlertController(title: "Sepete Ekle", message: "\(yemek.yemek_adi!) sepetinize eklendi!", preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "Alışverişe Devam Et", style: .default){ action in
+            
+        }
+        alert.addAction(OKAction)
+        let sepeteGitAction = UIAlertAction(title: "Sepete Git", style: .default){ action in
+            
+            self.performSegue(withIdentifier: "toSepet", sender: nil)
+            
+        }
+        alert.addAction(sepeteGitAction)
+        
+        self.present(alert, animated: true)
+        
+        
+        
+    }
+    
 
     
     func sepetTest(){

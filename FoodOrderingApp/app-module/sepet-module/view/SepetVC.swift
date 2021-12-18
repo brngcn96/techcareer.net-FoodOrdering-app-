@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import UserNotifications
 
-class SepetVC: UIViewController,YourCellDelegate {
+class SepetVC: UIViewController,YourCellDelegate, UNUserNotificationCenterDelegate {
 
-    
+    var izinKontrol = false
 
     var sepetPresenterNesnesi:ViewToPresenterSepetProtocol?
     
@@ -26,6 +27,19 @@ class SepetVC: UIViewController,YourCellDelegate {
         
         SepetRouter.createModule(ref: self)
         
+        // Notification
+        
+        UNUserNotificationCenter.current().delegate = self
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound,.badge], completionHandler: { (granted,error) in
+            self.izinKontrol = granted
+            
+            if granted {
+                print("Izin alma islemi basarili")
+            }else{
+                print("Izin alma islemi basarisiz")
+            }
+        })
+        
         
         // Do any additional setup after loading the view.
     }
@@ -34,7 +48,31 @@ class SepetVC: UIViewController,YourCellDelegate {
         sepetPresenterNesnesi?.sepettekileriYukle()
     }
     
-    func didPressButton(_ tag: Int) {
+    func bildirimOlustur(){
+        if (Int)(sepetBadgeItem.badgeValue!)! > 0{
+            if izinKontrol {
+                let icerik = UNMutableNotificationContent()
+                icerik.title = "Sepetkolik"
+                icerik.subtitle = "Sepetinde \((Int)(sepetBadgeItem.badgeValue!)!) yemek unuttun"
+                icerik.body = "Karnın acıkmadı mı?"
+                icerik.badge = 1 //artmasi icin userdefault
+                icerik.sound = UNNotificationSound.default
+                
+                
+                
+                //saniye turu
+                let tetikleme = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+                
+                let bildirimIstegi = UNNotificationRequest(identifier: "Bildirim Kullanimi", content: icerik, trigger: tetikleme)
+                
+                UNUserNotificationCenter.current().add(bildirimIstegi, withCompletionHandler: nil)
+                
+            }
+        }
+
+    }
+    
+    func didPressTrashButton(_ tag: Int) {
         
             print("tıklandı \(tag)")
 
@@ -65,15 +103,19 @@ extension SepetVC : PresenterToViewSepetProtocol {
         self.sepetListe = sepetListesi
         
         var total = 0
-        sepetListe.forEach { sepet_yemek in
 
-            total = total + (Int)(sepet_yemek.yemek_siparis_adet!)! * (Int)(sepet_yemek.yemek_fiyat!)!
-        }
         DispatchQueue.main.async {
+            
+            self.sepetListe.forEach { sepet_yemek in
+
+                total = total + (Int)(sepet_yemek.yemek_siparis_adet!)! * (Int)(sepet_yemek.yemek_fiyat!)!
+            }
+            
             
             self.toplamTutarLabel.text = "\(total)₺"
             self.cartTableView.reloadData()
             self.sepetBadgeItem.badgeValue = "\(sepetListesi.count)"
+            self.bildirimOlustur()
         }
     }
 }
@@ -148,3 +190,34 @@ extension SepetVC: UITableViewDelegate,UITableViewDataSource{
  
     
 }
+
+
+// NOTIFICATION EXTENSION
+
+extension ViewController:UNUserNotificationCenterDelegate {
+    //on planda calismasi icin
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.banner,.sound,.badge])
+        
+        //bildirime tiklama
+        
+       
+    }
+            
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+    
+            let app = UIApplication.shared
+            
+            if app.applicationState == .active {
+                print("onplandayken bildirim tiklandi")
+                app.applicationIconBadgeNumber = 0
+            }
+            if app.applicationState == .inactive {
+                print("arkaplandayken bildirim tiklandi")
+                app.applicationIconBadgeNumber = 0
+            }
+            completionHandler()
+    }
+        
+}
+
