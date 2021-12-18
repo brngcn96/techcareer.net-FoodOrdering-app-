@@ -93,10 +93,10 @@
                                                     <color key="highlightedColor" name="color_1"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87H-zS-0Hm">
-                                                    <rect key="frame" x="348" y="73" width="36" height="29"/>
+                                                    <rect key="frame" x="344" y="64" width="40" height="37"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="cart.badge.plus" catalog="system"/>
                                                     <connections>
                                                         <action selector="buttonAddCartAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJF-ck-jNQ"/>
                                                     </connections>
@@ -305,11 +305,12 @@
             <objects>
                 <viewController id="r3t-MK-qhf" customClass="SepetVC" customModule="FoodOrderingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wh3-f1-1RI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4c8-M0-RJj">
-                                <rect key="frame" x="0.0" y="44" width="414" height="530"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4c8-M0-RJj">
+                                <rect key="frame" x="0.0" y="56" width="414" height="530"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="530" id="b07-Ye-n05"/>
                                 </constraints>
@@ -317,10 +318,10 @@
                                 <color key="sectionIndexTrackingBackgroundColor" name="color_1"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartcell" rowHeight="108" id="NPO-ed-YrO" customClass="CartTableViewCell" customModule="FoodOrderingApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="108"/>
+                                        <rect key="frame" x="20" y="49.5" width="374" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NPO-ed-YrO" id="IU9-hO-6wG">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="108"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bWh-YK-4lT">
@@ -392,7 +393,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COI-dc-Jps">
-                                <rect key="frame" x="20" y="631" width="156.5" height="37"/>
+                                <rect key="frame" x="20" y="643" width="156.5" height="54"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Toplam Tutar:">
                                         <attributes>
@@ -404,7 +405,7 @@
                                 <color key="highlightedColor" name="Color"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xU2-SE-SQD" userLabel="total">
-                                <rect key="frame" x="274" y="640" width="57.5" height="19"/>
+                                <rect key="frame" x="274" y="660.5" width="57.5" height="19"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -432,7 +433,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="iDf-RW-SOW">
-                                <rect key="frame" x="0.0" y="492" width="414" height="205"/>
+                                <rect key="frame" x="-10" y="506" width="414" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -634,7 +635,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cej-DW-ffB"/>
+        <segue reference="9Gi-r8-hZO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="1200" height="1200"/>
@@ -642,9 +643,9 @@
         <image name="Image-2" width="3543" height="3543"/>
         <image name="LikeFilled" width="24" height="24"/>
         <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="cart.badge.plus" catalog="system" width="128" height="106"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="trash" catalog="system" width="121" height="128"/>
         <namedColor name="Color">
             <color red="0.18899999558925629" green="0.32800000905990601" blue="0.23899999260902405" alpha="0.7850000262260437" colorSpace="custom" customColorSpace="sRGB"/>
