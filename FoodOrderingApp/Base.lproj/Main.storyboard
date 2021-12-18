@@ -504,7 +504,7 @@
                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Yemekler" image="graduationcap" catalog="system" selectedImage="Image-1" id="a82-XI-4r4">
+                    <tabBarItem key="tabBarItem" title="Yemekler" image="Image-1" selectedImage="Image-1" id="a82-XI-4r4">
                         <color key="badgeColor" systemColor="systemPinkColor"/>
                     </tabBarItem>
                 </viewController>
@@ -573,6 +573,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jO3-hH-Exc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fp6-aL-Gdf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="Color"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -599,28 +600,27 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mEi-mj-CcY"/>
+        <segue reference="9Gi-r8-hZO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="1200" height="1200"/>
-        <image name="Image-1" width="24" height="24"/>
+        <image name="Image-1" width="128" height="128"/>
         <image name="LikeFilled" width="24" height="24"/>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
-        <image name="graduationcap" catalog="system" width="128" height="106"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="trash" catalog="system" width="121" height="128"/>
         <namedColor name="Color">
-            <color red="0.18871808052062988" green="0.32753697037696838" blue="0.23891128599643707" alpha="0.9490087628364563" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18899999558925629" green="0.32800000905990601" blue="0.23899999260902405" alpha="0.7850000262260437" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="cartred">
-            <color red="1" green="0.5" blue="0.56548219919204712" alpha="0.94795864820480347" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.5" blue="0.56499999761581421" alpha="0.94800001382827759" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_1">
             <color red="0.47099998593330383" green="0.6600000262260437" blue="0.61599999666213989" alpha="0.94099998474121094" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="dirtyWhite">
-            <color red="0.86592745780944824" green="0.96526378393173218" blue="0.92729336023330688" alpha="0.90087366104125977" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.86599999666213989" green="0.9649999737739563" blue="0.92699998617172241" alpha="0.90100002288818359" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

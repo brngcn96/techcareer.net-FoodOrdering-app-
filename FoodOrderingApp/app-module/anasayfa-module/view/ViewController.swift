@@ -12,7 +12,7 @@ import Kingfisher
 class ViewController: UIViewController {
 
     
-    
+    var filteredYemeklerListe = [Yemek]()
     
     var yemeklerListe = [Yemek]()
     var anasayfaPresenterNesnesi:ViewToPresenterAnasayfaProtocol?
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
          
          
         
-        
+        yemeklerSearchBar.delegate = self
         
         yemeklerTableView.delegate = self
         yemeklerTableView.dataSource = self
@@ -100,6 +100,7 @@ class ViewController: UIViewController {
 extension ViewController : PresenterToViewAnasayfaProtocol {
     func vieweVeriGonder(yemeklerListesi: Array<Yemek>) {
         self.yemeklerListe = yemeklerListesi
+        self.filteredYemeklerListe = yemeklerListesi
         DispatchQueue.main.async {
             self.yemeklerTableView.reloadData()
         }
@@ -112,11 +113,11 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         yemeklerSearchBar.placeholder = "\(yemeklerListe.count) yemek arasında ara"
-        return yemeklerListe.count
+        return filteredYemeklerListe.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let yemek = yemeklerListe[indexPath.row]
+        let yemek = filteredYemeklerListe[indexPath.row]
         performSegue(withIdentifier: "toDetay", sender: yemek)
         
         tableView.deselectRow(at: indexPath, animated: true)
@@ -124,7 +125,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let yemek = yemeklerListe[indexPath.row]
+        let yemek = filteredYemeklerListe[indexPath.row]
         let hucre = tableView.dequeueReusableCell(withIdentifier: "foodcell", for: indexPath) as! FoodsTableViewCell
         
         hucre.foodPriceLabel.text = "\(yemek.yemek_fiyat!) ₺"
@@ -148,5 +149,20 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     
  
     
+}
+
+extension ViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.filteredYemeklerListe = self.yemeklerListe.filter{yemek in
+            if yemek.yemek_adi!.lowercased().contains(searchText.lowercased()){
+                return true
+            }
+            if searchText == ""{
+                return true
+            }
+            return false
+        }
+        self.yemeklerTableView.reloadData()
+    }
 }
 
